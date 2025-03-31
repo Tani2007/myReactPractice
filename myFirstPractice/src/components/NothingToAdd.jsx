@@ -8,13 +8,16 @@ export default function NothingToAdd({ onClick }) {
         src={image}
         alt=""
       />
-      <h1 className="mb-3 font-bold text-4xl text-center">
-        No Project Selected
-      </h1>
-      <h2 className="mt-5 font-bold text-2xl text-center">
+      <h1 className=" font-bold text-4xl text-center">No Project Selected</h1>
+      <h2 className=" font-bold text-2xl text-center">
         Select a project or get started with a new one.
       </h2>
-      <Button onClick={onClick}>ADD A NEW PROJECT</Button>
+      <button
+        className="p-2 bg-slate-700 hover:bg-slate-400 rounded-sm hover:text-slate-950"
+        onClick={onClick}
+      >
+        ADD A NEW PROJECT
+      </button>
     </div>
   );
 }

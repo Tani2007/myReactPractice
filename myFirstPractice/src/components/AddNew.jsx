@@ -39,12 +39,12 @@ export default function AddNew({ onCancel, onSave }) {
           Please make ysre you provide a valid value for every input field
         </p>
       </Modal>
-      <div className="w-[35rem] mt-16">
+      <div className="w-[35rem] mt-8 pr-10">
         <menu className="flex item-center justify-end  gap-4 my-4">
           <li>
             <button
               onClick={onCancel}
-              className="px-6 py-2 rounded-md bg-stone-800 text-stone-50 hover:bg-stone-950"
+              className="px-6 py-2 rounded-md font-bold hover:text-red-500"
             >
               Cancel
             </button>
@@ -59,7 +59,7 @@ export default function AddNew({ onCancel, onSave }) {
           </li>
         </menu>
         <Input ref={title} label="title" />
-        <Input ref={description} label="description" />
+        <Input ref={description} label="description" textarea={"textarea"} />
         <Input ref={dueDate} label="due-date" type="date" />
         <div className=""></div>
       </div>
