@@ -43,7 +43,8 @@ export default function Tasks() {
                 <span>{mytask.myNewTask}</span>
                 <button
                   onClick={() => handleDeleteTask(mytask.id)}
-                  className="text-stone-700 rounded-sm px-1 hover:text-red-500"
+                  className="text-stone-700 rounded-sm px-1 font-bold
+                  hover:text-red-500 active:text-red-500"
                 >
                   Clear
                 </button>

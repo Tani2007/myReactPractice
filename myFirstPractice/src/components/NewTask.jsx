@@ -19,7 +19,7 @@ export default function NewTask({ onTaskAdd }) {
       />
       <button
         onClick={handleTaskChange}
-        className="text-stone-700 hover:text-stone-950 font-bold"
+        className="text-stone-700 hover:text-stone-950 font-bold active:text-stone-950"
       >
         Add Task
       </button>

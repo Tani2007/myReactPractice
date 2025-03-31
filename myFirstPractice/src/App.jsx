@@ -77,6 +77,7 @@ export default function App() {
   return (
     <main className="h-screen my-8 flex gap-8">
       <Sidebar
+        selectedProjectId={dataUpdated.btnOn}
         onClick={handleAddClick}
         onSelectProject={handleSelectProject}
         projects={dataUpdated.project}

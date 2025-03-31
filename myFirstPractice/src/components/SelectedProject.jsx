@@ -13,7 +13,10 @@ export default function SelectedProject({ project, onDelete }) {
           <h1 className="text-3xl font-bold text-stone-600 mb-2">
             {project.title}
           </h1>
-          <button className="font-bold hover:text-red-500" onClick={onDelete}>
+          <button
+            className="font-bold hover:text-red-500 active:text-red-500"
+            onClick={onDelete}
+          >
             Delete
           </button>
         </div>
