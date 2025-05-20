@@ -1,18 +1,14 @@
 import { createContext, useState } from "react";
 
-export const ButtonContext = createContext();
-export function ButtonContextProvider({ children }) {
-  const [theme, setTheme] = useState("green");
-  function handleTheme() {
-    if (theme == "green") {
-      setTheme("red");
-    } else {
-      setTheme("green");
-    }
+export const BtnContext = createContext();
+export default function BtnContextProvider({ children }) {
+  const [data, setData] = useState(false);
+  function handleOnClick() {
+    setData(!data);
   }
   return (
-    <ButtonContext.Provider value={{ theme, handleTheme }}>
+    <BtnContext.Provider value={{ handleOnClick, data }}>
       {children}
-    </ButtonContext.Provider>
+    </BtnContext.Provider>
   );
 }
