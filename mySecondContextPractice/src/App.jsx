@@ -19,7 +19,7 @@ export default function App() {
               key={index}
               acIsOpen={index == acIsOpen ? true : false}
               setAcIsOpen={() =>
-                setAcIsOpen((prev) => (prev == index ? false : index))
+                setAcIsOpen((prev) => (prev == index ? null : index))
               }
             />
           );
